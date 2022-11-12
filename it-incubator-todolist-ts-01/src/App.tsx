@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {Students} from "./Students";
 
 
 // Hi Guys!
@@ -14,7 +15,7 @@ function App() {
         title: "What to do",
         tasks: [
             {taskId: 1, title: "HTML&CSS2", isDone: true},
-            {taskId: 2, title: "JS2", isDone: true}
+            {taskId: 2, title: "JS2", isDone: false}
         ],
         students: [
             'Jago Wormald1',
@@ -126,7 +127,8 @@ function App() {
 
     return (
         <div className="App">
-
+         <Students  data={data1}/>
+            <Students  data={data2}/>
         </div>
     );
 }
